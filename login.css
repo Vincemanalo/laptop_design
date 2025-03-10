@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    padding-right: 150px;
+}
+
+.slogotxt {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logotext-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.logotxt {
+    font-size: 70px;
+    margin: 0;
+}
+
+.sublogotxt {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.login-box {
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    margin-right: -60px;
+}
+
+.avatarlogin {
+    width: 70px;
+    height: auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group img {
+    position: absolute;
+    left: 10px;
+    height: 20px;
+    z-index: 1;
+}
+
+.divider {
+    width: 2px;
+    height: 20px;
+    background-color: #555555;
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.login-btn {
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #003369;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #559deb;
+}
+
+
+@media (max-width: 1200px) {
+    body {
+        padding-right: 50px;
+    }
+    .slogotxt {
+        margin-right: 10%;
+    }
+    .logotxt {
+        font-size: 60px;
+    }
+    .sublogotxt {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .slogotxt {
+        margin-right: 0;
+    }
+    .login-box {
+        width: 350px;
+        padding: 30px;
+    }
+    .logotxt {
+        font-size: 50px;
+    }
+    .sublogotxt {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+        text-align: center;
+    }
+    .slogotxt {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .login-box {
+        width: 90%;
+        max-width: 300px;
+        padding: 20px;
+    }
+    .logotxt {
+        font-size: 40px;
+    }
+    .sublogotxt {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logotxt {
+        font-size: 30px;
+    }
+    .sublogotxt {
+        font-size: 12px;
+    }
+    .login-box {
+        width: 90%;
+        max-width: 250px;
+        padding: 15px;
+    }
+    .avatarlogin {
+        width: 50px;
+    }
+    .input-group input {
+        padding: 8px 8px 8px 40px;
+        font-size: 14px;
+    }
+    .login-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}   
